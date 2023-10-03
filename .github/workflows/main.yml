@@ -1,0 +1,13 @@
+name: Ansible Scan
+
+on:
+  push:
+    branches: [ "main", "test" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+
+jobs:
+  scan:
+    uses: callmegreg-demo-org/centralized-workflows/.github/workflows/ansible-scanner.yml@main
