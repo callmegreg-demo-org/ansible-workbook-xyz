@@ -1,0 +1,7 @@
+---
+- name: Test
+  hosts: all
+  tasks:
+   - name: Debug Task
+     ansible.builtin.debug:
+       msg: Debug message here123
