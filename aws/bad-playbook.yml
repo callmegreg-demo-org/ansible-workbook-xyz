@@ -1,7 +1,10 @@
 ---
-- name: Debug Task
-  ansible.builtin.debug:
-    msg: Debug message
+- name: Test
+  
+  tasks:
+  - name: Debug Task
+    ansible.builtin.debug:
+      msg: Debug message
 # - name: Create task definition
 #   community.aws.ecs_taskdefinition:
 #     family: nginx
