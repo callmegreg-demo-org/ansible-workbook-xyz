@@ -1,1 +1,1 @@
-# ansible-workbook-xyz
+Example infrastructure as code repo
