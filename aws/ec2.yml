@@ -1,4 +1,7 @@
-# ---
+---
+- name: Debug Task
+  ansible.builtin.debug:
+    msg: Debug message
 # - name: Create Ec2 instances
 #   hosts: localhost
 #   gather_facts: false
