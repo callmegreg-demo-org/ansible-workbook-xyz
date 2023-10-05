@@ -3,8 +3,10 @@ name: Ansible Scan
 on:
   push:
     branches: [ "main", "test" ]
+    paths: '**.yml'
   pull_request:
     branches: [ "main" ]
+    paths: '**.yml'
   workflow_dispatch:
 
 
