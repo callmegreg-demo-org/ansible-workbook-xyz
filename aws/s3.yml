@@ -15,3 +15,8 @@
     name: mys3bucket
     state: absent
     force: true
+
+- amazon.aws.s3_bucket:
+    name: mys3bucket
+    state: present
+    acl: public-read
