@@ -1,0 +1,17 @@
+---
+# Create a simple S3 bucket
+- amazon.aws.s3_bucket:
+    name: mys3bucket
+    state: present
+
+# Create a simple S3 bucket on Ceph Rados Gateway
+- amazon.aws.s3_bucket:
+    name: mys3bucket
+    endpoint_url: http://your-ceph-rados-gateway-server.xxx
+    ceph: true
+
+# Remove an S3 bucket and any keys it contains
+- amazon.aws.s3_bucket:
+    name: mys3bucket
+    state: absent
+    force: true
