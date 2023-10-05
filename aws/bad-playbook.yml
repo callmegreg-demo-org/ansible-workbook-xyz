@@ -1,5 +1,6 @@
 ---
 - name: Test
+  hosts: all
   
   tasks:
   - name: Debug Task
