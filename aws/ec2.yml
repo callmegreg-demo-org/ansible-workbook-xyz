@@ -4,4 +4,4 @@
   tasks:
   - name: Debug Task
     ansible.builtin.debug:
-      msg: Debug message
+      msg: Debug message here
